@@ -13,7 +13,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    environment: test-environment
+    # environment: test-environment
 
     env:
       PROJECT_ID: ${{ secrets.PROJECT_ID }}
