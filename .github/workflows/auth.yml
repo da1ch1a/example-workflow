@@ -13,6 +13,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    environment: test-environment
+
     env:
       PROJECT_ID: ${{ secrets.PROJECT_ID }}
       WORKLOAD_IDENTITY_PROVIDER: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
