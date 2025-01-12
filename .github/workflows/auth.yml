@@ -30,9 +30,9 @@ jobs:
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v2'
         with:
-          project_id: ${PROJECT_ID}
-          workload_identity_provider: ${WORKLOAD_IDENTITY_PROVIDER}
-          service_account: ${SERVICE_ACCOUNT_EMAIL}
+          project_id: ${{ env.PROJECT_ID }}
+          workload_identity_provider: ${{ env.WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ env.SERVICE_ACCOUNT_EMAIL }}
           token_format: access_token
 
       - name: Login to GAR
