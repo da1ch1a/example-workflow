@@ -13,7 +13,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    # environment: test-environment
+    # workload identity poolに接続するサービスアカウントのsubject属性にマッピングするために、environmentの値も必要なので設定
+    # subjectの値は"repo:ユーザー名/repo名:environment:environmentの値"
+    environment: test-environment
 
     env:
       PROJECT_ID: ${{ secrets.PROJECT_ID }}
